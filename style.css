@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.profile {
+    width: 100%;
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    margin-top: 60px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #4E5150;
+}
+
+.profile p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+    color: #A9A9A9;
+}
+
+.numbers {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.posts, .followers, .following {
+    width: 100px;
+    height: 70px;
+    align-self: center;
+    background: #E5E5E5;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 0 12px;
+    text-align: center;
+}
+
+.posts a, .followers a, .following a {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E5150;
+}
+
+.posts p, .followers p, .following p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 4px;
+    color: #BDBDBD;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+.followers {
+    grid-area: followers;
+}
+
+.following {
+    grid-area: following;
+}
+
+.feed {
+    width: 100%;
+    height: auto;
+    padding: 4vh 14vw;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pic1 pic2 pic2"
+    "pic3 pic3 pic4"
+    "pic5 pic6 pic4";
+    grid-gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.pic4 {
+    grid-area: pic4;
+}
+
+.pic5 {
+    grid-area: pic5;
+}
+
+.pic6 {
+    grid-area: pic6;
+}
+
+.footer {
+    width: 100vw;
+    height: 16vh;
+    text-align: center;
+    color: #B9BDCF;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16vh;
+}
+
+
+.footer a {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .profile img {
+        width: 100px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+    
+    .profile h1 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .profile p {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+    
+    .posts, .followers, .following {
+        width: 75px;
+        height: 50px;
+        padding: 6px;
+        margin-bottom: 40px;
+    }
+    
+    .posts a, .followers a, .following a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .posts p, .followers p, .following p {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 0px;
+    }
+
+    .photos {
+        grid-gap: 0.6rem;
+    }
+
+    .feed {
+        padding: 0vh 1.6vw;
+    }
+}
