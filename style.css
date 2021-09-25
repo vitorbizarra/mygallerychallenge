@@ -162,6 +162,11 @@ body {
 
 .footer a {
     cursor: pointer;
+    color: #B9BDCF;
+}
+
+.footer a:visited {
+    color: #B9BDCF;
 }
 
 @media screen and (max-width: 1024px) {
